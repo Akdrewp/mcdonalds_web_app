@@ -39,5 +39,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # mcdonalds_web_app
 McDonalds app clone for IOS
 >>>>>>> 44c6c5c07e291d567287007c0e1030845abd4193
-# mcdonalds_web_app
-+ McDonalds app clone for IOS
