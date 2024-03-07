@@ -18,3 +18,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MCDONALDS_APP_12AE6 }}'
           channelId: live
           projectId: mcdonalds-app-12ae6
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
