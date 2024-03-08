@@ -16,7 +16,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
+      <body className={inter.className}>
+        {children}
+
+        <div className="footer">
+          <p>
+            I&apos;m the footer!
+          </p>
+        </div>
+      </body>
     </html>
   );
 }
