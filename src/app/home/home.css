@@ -1,0 +1,19 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding: 0rem 2rem;
+}
+
+.promo-bar {
+    background-color: #f4be44;
+    height: 20rem;
+}
+
+.rewards-more-bar {
+    background-color: white;
+    height: 15rem;
+    margin-top: 2rem;
+}

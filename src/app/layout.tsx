@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
 
-        <div className="footer">
+        <div className="menu-footer">
           <p>
             I&apos;m the footer!
           </p>

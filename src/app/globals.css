@@ -1,8 +1,23 @@
-.footer {
+:root {
+        --main-bg: rgba(249,249,249,255);
+}
+
+body, html { 
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--main-bg);
+}
+
+.menu-footer {
         position: fixed;
         bottom: 0;
         width: 100%;
-        height: 40px;
-        background: green;
-        color: white;
+        height: 6.5rem;
+        border-top: 1px solid #d3d3d3;
+}
+
+.home-header {
+        border-bottom: 1px solid #d3d3d3;
+        height: 6.5rem;
 }
