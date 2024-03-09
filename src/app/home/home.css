@@ -4,16 +4,66 @@
 }
 
 .content {
-    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 5rem;
+}
+
+.promo-wrapper {
+    flex-grow: 1;
+    z-index: 1;
+
+    overflow: hidden;
+    border-radius: 0.5rem;
+
+}
+
+.promo-element {
+    z-index: 1;
 }
 
 .promo-bar {
-    background-color: #f4be44;
-    height: 20rem;
+    display: flex;
+    flex-direction: column;
+
+    background-color: transparent;
+    height: 16rem;
+}
+
+.promo {
+    display: flex;
+
+    flex-grow: 1;
 }
 
 .rewards-more-bar {
     background-color: white;
     height: 15rem;
     margin-top: 2rem;
+}
+
+.menu-bar {
+    height: 17rem;
+    
+}
+
+.offers-bar {
+    height: 16rem;
+}
+
+.new-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    height: 60rem;
+}
+
+.menu-bar, .promo-bar,
+.rewards-more-bar, .offers-bar,
+.new-bar {
+    border: 1px solid black;
 }
