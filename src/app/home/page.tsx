@@ -10,6 +10,7 @@ export default function Home() {
                     img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
                     title="Promo Title"
                     subtext="Promo subtext"
+                    alt="McDonalds promo image coffee and Mcmuffin"
                 />
             </div>
             <div>
@@ -32,16 +33,19 @@ export default function Home() {
                     img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
                     title="Promo Title"
                     subtext="Promo subtext"
+                    alt="McDonalds promo image coffee and Mcmuffin"
                 />
                 <Promo
                     img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
                     title="Promo Title"
                     subtext="Promo subtext"
+                    alt="McDonalds promo image coffee and Mcmuffin"
                 />
                 <Promo
                     img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
                     title="Promo Title"
                     subtext="Promo subtext"
+                    alt="McDonalds promo image coffee and Mcmuffin"
                 />
             </div>
         </div>

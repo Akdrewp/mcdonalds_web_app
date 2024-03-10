@@ -18,6 +18,8 @@ body, html {
         bottom: 0;
         width: 100%;
         height: 6.5rem;
+        /* Keep header above top image */
+        z-index: 2; 
 
         border-top: 1px solid #d3d3d3;
         background-color: var(--main-bg);
@@ -29,7 +31,7 @@ body, html {
         width: 100%;
         height: 6.5rem;
         /* Keep header above top image */
-        z-index: 1; 
+        z-index: 2; 
 
         border-bottom: 1px solid #d3d3d3;
         background-color: var(--main-bg);

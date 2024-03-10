@@ -6,17 +6,19 @@ export default function Promo({
     img,
     title,
     subtext,
+    alt,
 }:  {
     img: string;
     title: string;
     subtext: string;
+    alt: string
 }) {
     return (
         <div className="promo-wrapper" style={{position: "relative"}}>
             <div className="promo-element">{title}</div>
             <Image
                 src={img}
-                alt="Landscape picture"
+                alt={alt}
                 style={{
                     zIndex: -1,
                 }}
