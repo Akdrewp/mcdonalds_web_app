@@ -5,17 +5,12 @@ export default function Home() {
     return (
       <div className="homepage">
         <div className="promo-bar">
-            <div className="promo">
                 <Promo
                     img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
-                    title="Promo Title"
-                    subtext="Promo subtext"
+                    title="Welcome to McDonald's"
+                    subtext="Discover some sauce we made"
                     alt="McDonalds promo image coffee and Mcmuffin"
                 />
-            </div>
-            <div>
-                <p>I&apos;m a footer under the promo!</p>
-            </div>
         </div>
         <div className="content">
             <div className="rewards-more-bar">
@@ -29,24 +24,26 @@ export default function Home() {
             </div>
             <div className="new-bar">
                 I&apos;m what&apos;s new!
-                <Promo
-                    img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
-                    title="Promo Title"
-                    subtext="Promo subtext"
-                    alt="McDonalds promo image coffee and Mcmuffin"
-                />
-                <Promo
-                    img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
-                    title="Promo Title"
-                    subtext="Promo subtext"
-                    alt="McDonalds promo image coffee and Mcmuffin"
-                />
-                <Promo
-                    img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
-                    title="Promo Title"
-                    subtext="Promo subtext"
-                    alt="McDonalds promo image coffee and Mcmuffin"
-                />
+                <div className="new-bar-promos">
+                    <Promo
+                        img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
+                        title="Promo Title"
+                        subtext="Promo subtext"
+                        alt="McDonalds promo image coffee and Mcmuffin"
+                    />
+                    <Promo
+                        img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
+                        title="Promo Title"
+                        subtext="Promo subtext"
+                        alt="McDonalds promo image coffee and Mcmuffin"
+                    />
+                    <Promo
+                        img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
+                        title="Promo Title"
+                        subtext="Promo subtext"
+                        alt="McDonalds promo image coffee and Mcmuffin"
+                    />
+                </div>
             </div>
         </div>
       </div>
