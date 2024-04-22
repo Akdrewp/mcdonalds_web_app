@@ -8,7 +8,7 @@ export default function Home() {
                 <Promo
                     img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
                     title="Welcome to McDonald's"
-                    subtext="Discover some sauce we made"
+                    subtext="Discover our new barbecue and sweet and sour sauce"
                     alt="McDonalds promo image coffee and Mcmuffin"
                 />
         </div>
@@ -16,7 +16,7 @@ export default function Home() {
             <div className="rewards-more-bar">
                 I&apos;m a reminder more points, more rewards!
             </div>
-            <div className="menu-bar">
+            <div className="menu-bar mb-3.5">
                 I&apos;m a menu!
             </div>
             <div className="offers-bar">

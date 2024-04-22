@@ -16,14 +16,14 @@ export default function Promo({
     return (
         <div className="promo-wrapper">
             <div className="promo-main" style={{position: "relative"}}>
-                <div className='ml-6 mt-4'>
+                <div className='relative left-[5%] top-[12%] h-full w-1/2'>
                     <div className="">
-                        <h1 className="text-3xl font-Inter font-bold">{title}</h1>
+                        <h1 className="leading-7 text-3xl font-Inter font-[730] pb-1">{title}</h1>
                     </div>
                     <div>
-                        <p className='text-sm'>{subtext}</p>
+                        <p className='leading-4 text-xs pb-2'>{subtext}</p>
                     </div>
-                    <Button/>
+                    <PromoButton/>
                 </div>
                 <Image
                     src={img}
@@ -35,17 +35,17 @@ export default function Promo({
                     quality={100}
                 />
             </div>
-            <div className='promo-footer ml-6'>
-                I&apos;m the footer
+            <div className='promo-footer ml-6 text-xs'>
+            * For a limited time only. At participating McDonald’s restaurants in Canada. Product availability varies by restaurant.
             </div>
         </div>
     );
 }
 
-function Button() {
+function PromoButton() {
     return (
-        <button type="button" className='bg-white py-0.5 px-4'>
-            I&apos;m a button
+        <button type="button" className='bg-white py-2.5 px-11 rounded-sm text-sm'>
+            Order Now
         </button>
     );
 }
