@@ -1,5 +1,6 @@
 import Promo from "./promo";
 import Menu from "./menu";
+import Offers from "./offers";
 import morningPromo from "/home/akdrewpwork/repos/mcdonalds_web_app/mcdonalds_web_app/public/images/promo/mcDonalds-morning-promo-notext.png";
 import RewardsMore from "./rewards";
 
@@ -15,12 +16,10 @@ export default function Home() {
                     isSmall={false}
                 />
         </div>
-        <div className="content pt-9">
+        <div className="content flex flex-col pt-9">
             <RewardsMore />
             <Menu />
-            <div className="offers-bar">
-                I&apos;m the offers!
-            </div>
+            <Offers />
             <div className="new-bar">
                 I&apos;m what&apos;s new!
                 <div className="new-bar-promos">
