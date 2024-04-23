@@ -1,5 +1,7 @@
 import Promo from "./promo";
+import Menu from "./menu";
 import morningPromo from "/home/akdrewpwork/repos/mcdonalds_web_app/mcdonalds_web_app/public/images/promo/mcDonalds-morning-promo-notext.png";
+import RewardsMore from "./rewards";
 
 export default function Home() {
     return (
@@ -10,15 +12,12 @@ export default function Home() {
                     title="Welcome to McDonald's"
                     subtext="Discover our new barbecue and sweet and sour sauce"
                     alt="McDonalds promo image coffee and Mcmuffin"
+                    isSmall={false}
                 />
         </div>
-        <div className="content">
-            <div className="rewards-more-bar">
-                I&apos;m a reminder more points, more rewards!
-            </div>
-            <div className="menu-bar mb-3.5">
-                I&apos;m a menu!
-            </div>
+        <div className="content pt-9">
+            <RewardsMore />
+            <Menu />
             <div className="offers-bar">
                 I&apos;m the offers!
             </div>
@@ -30,18 +29,21 @@ export default function Home() {
                         title="Promo Title"
                         subtext="Promo subtext"
                         alt="McDonalds promo image coffee and Mcmuffin"
+                        isSmall={true}
                     />
                     <Promo
                         img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
                         title="Promo Title"
                         subtext="Promo subtext"
                         alt="McDonalds promo image coffee and Mcmuffin"
+                        isSmall={true}
                     />
                     <Promo
                         img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"
                         title="Promo Title"
                         subtext="Promo subtext"
                         alt="McDonalds promo image coffee and Mcmuffin"
+                        isSmall={true}
                     />
                 </div>
             </div>

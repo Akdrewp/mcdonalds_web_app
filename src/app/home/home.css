@@ -9,18 +9,25 @@
     max-width: 60rem;
     flex-grow: 1;
     /* align-items: center; */
+
+    background-color: #f9f9f9;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.5rem;
 
     flex-shrink: 4;
 
-    padding: 0 2rem 0 2rem;
     margin-bottom: 3rem;
-    margin-top: 1.5rem;
+
+    background-color: #f9f9f9;
+}
+
+.rewards-gradient{
+    background: rgb(136,26,97);
+    background: linear-gradient(180deg, rgba(136,26,97,1) 0%, rgba(164,32,53,1) 45%, rgba(188,40,30,1) 100%);
 }
 
 .promo-wrapper {
@@ -75,8 +82,7 @@
     flex-grow: 1;
 }
 
-.menu-bar, .promo-bar,
-.rewards-more-bar, .offers-bar,
+.menu-bar, .promo-bar, .offers-bar,
 .new-bar {
     border: 1px solid black;
 }

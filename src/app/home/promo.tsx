@@ -7,11 +7,13 @@ export default function Promo({
     title,
     subtext,
     alt,
+    isSmall,
 }:  {
     img: string;
     title: string;
     subtext: string;
-    alt: string
+    alt: string;
+    isSmall: boolean;
 }) {
     return (
         <div className="promo-wrapper">
@@ -35,9 +37,10 @@ export default function Promo({
                     quality={100}
                 />
             </div>
-            <div className='promo-footer ml-6 text-xs'>
-            * For a limited time only. At participating McDonald’s restaurants in Canada. Product availability varies by restaurant.
-            </div>
+            {<div className={`relative promo-footer text-[0.533rem] leading-[0.6rem] w-[90%]
+                 ${(isSmall ? "text-black leading-3 mt-1" : "text-gray-600 left-[5%] mt-[0.35rem]")}`}>
+                For a limited time only. At participating McDonald’s restaurants in Canada. Product availability varies by restaurant.
+            </div>}
         </div>
     );
 }

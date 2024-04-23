@@ -11,6 +11,7 @@ module.exports = {
     },
     fontFamily: {
       'Inter': ['Inter', { weight: '800' }],
+      'Speedee' : ['Speedee'],
     }
   },
   plugins: [],
