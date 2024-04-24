@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Menu() {
     return (
-        <div className="menu-bar overflow-hidden mt-7 mb-8 ml-4">
-            <div className="flex">
+        <div className="h-52 overflow-hidden mt-7 mb-8 ml-4">
+            <div className="flex mb-3">
                 <h1 className="grow ml-2 text-xl font-extrabold speedee">Menu</h1>
                 <div className="flex items-center text-[#3377c2] mr-4">
                     <p className="text-xs font-extrabold mr-2 ">Full menu</p>
@@ -14,20 +14,20 @@ export default function Menu() {
             </div>
             <div className="flex gap-2 pl-1"> 
                 <MenuImage 
-                    src={"/images/promo/mcDonalds-BigMac-menu-icon.png"}
+                    src={"/images/menu/mcDonalds-BigMac-menu-icon.png"}
                     alt={"Big Mac"}
                 />
                 <MenuImage
-                    src={"/images/promo/mcDonalds-mcChicken-Menu-Icon.png"}
-                    alt={"Big Mac"}
+                    src={"/images/menu/mcDonalds-mcChicken-Menu-Icon.png"}
+                    alt={"mcChicken"}
                 />
                 <MenuImage
-                    src={"/images/promo/mcDonalds-wraps-menu-icon.png"}
-                    alt={"Big Mac"}
+                    src={"/images/menu/mcDonalds-wraps-menu-icon.png"}
+                    alt={"Wraps"}
                 />
                 <MenuImage
-                    src={"/images/promo/mcDonalds-drinks-menu-icon.png"}
-                    alt={"Big Mac"}
+                    src={"/images/menu/mcDonalds-drinks-menu-icon.png"}
+                    alt={"Drinks"}
                 />
             </div>
         </div>

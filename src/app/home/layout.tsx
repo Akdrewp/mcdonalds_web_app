@@ -1,4 +1,7 @@
+import { relative } from "path";
 import "./home.css"
+import Image from "next/image";
+import Top from "./top";
 
 export default function HomeLayout({
     children,
@@ -7,9 +10,7 @@ export default function HomeLayout({
 }) {
     return (
         <>
-            <div className="home-header">
-                <p> I&apos;m the header of home! </p>
-            </div>
+            <Top />
             {children}
         </>
     );

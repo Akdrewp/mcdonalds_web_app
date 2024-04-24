@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function RewardsMore() {
     return (
-        <div className="rewards-more-bar flex mx-6 h-32 border rounded-md overflow-hidden">
+        <div className="flex mx-6 h-24 border rounded-md overflow-hidden shadow-[-2px_1px_1px_0px_rgba(0,0,0,0.04)]">
             <div className="rewards-gradient w-4" />
             <Image
                     className="self-center"
