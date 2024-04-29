@@ -1,4 +1,5 @@
 
+
 export default function McDonaldsMoreLogo({
     className,
     isSelected,
@@ -21,9 +22,9 @@ export default function McDonaldsMoreLogo({
     >
         <g id="_20x20_three-dots--grey" data-name="20x20/three-dots--grey" transform="rotate(0)">
             <rect id="Rectangle" width="24" height="24" fill="none"/>
-            <circle id="Oval" cx="1" cy="1" r="1" transform="translate(5 11)" stroke={finalColor} fill={finalColor} stroke-miterlimit="10" stroke-width="0.7"/>
-            <circle id="Oval-2" data-name="Oval" cx="1" cy="1" r="1" transform="translate(11 11)" stroke={finalColor} fill={finalColor} stroke-miterlimit="10" stroke-width="0.7"/>
-            <circle id="Oval-3" data-name="Oval" cx="1" cy="1" r="1" transform="translate(17 11)" stroke={finalColor} fill={finalColor} stroke-miterlimit="10" stroke-width="0.7"/>
+            <circle id="Oval" cx="1" cy="1" r="1" transform="translate(5 11)" stroke={finalColor} fill={finalColor} strokeMiterlimit="10" strokeWidth="0.7"/>
+            <circle id="Oval-2" data-name="Oval" cx="1" cy="1" r="1" transform="translate(11 11)" stroke={finalColor} fill={finalColor} strokeMiterlimit="10" strokeWidth="0.7"/>
+            <circle id="Oval-3" data-name="Oval" cx="1" cy="1" r="1" transform="translate(17 11)" stroke={finalColor} fill={finalColor} strokeMiterlimit="10" strokeWidth="0.7"/>
         </g>
     </svg>
     );
