@@ -7,7 +7,7 @@ import RewardsMore from "./rewards";
 
 export default function Home() {
     return (
-      <div className="homepage">
+      <div className="flex flex-col grow bg-[#f9f9f9] max-w-xl mx-auto">
         <div className="flex flex-col h-52">
                 <Promo
                     img="/images/promo/mcDonalds-morning-promo-notext-upscaled-1.png"

@@ -34,7 +34,6 @@ export default function Promo({
                         zIndex: -1,
                     }}
                     fill
-                    quality={100}
                 />
             </div>
             {<div className={`relative promo-footer text-[0.533rem] leading-[0.6rem] w-[90%]

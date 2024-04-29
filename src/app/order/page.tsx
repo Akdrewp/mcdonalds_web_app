@@ -9,7 +9,7 @@ function orderHamburger() {
 export default function Order() {
 
     return(
-        <div>
+        <div className="grow">
             <button onClick={orderHamburger}>
                 Order Hamburger
             </button>
