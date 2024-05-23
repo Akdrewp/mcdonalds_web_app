@@ -1,11 +1,15 @@
 'use client'
 
+import { signOut } from "firebase/auth";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config";
+import { useEffect, useState } from "react";
+import { User } from "firebase/auth";
+import { onAuthStateChanged } from "firebase/auth";
 
 
 
-export default function SignInForm() {
+export function SignInForm() {
 
     function createUserWithEmail(
         email: string,
@@ -15,7 +19,7 @@ export default function SignInForm() {
     }
 
     const createAccount = (event: React.FormEvent<HTMLFormElement>): void => {
-        event.preventDefault()
+        event.preventDefault();
         let formData = Object.fromEntries(new FormData(event.currentTarget));
         let email = formData.email.toString();
         let password = formData.password.toString();
@@ -31,7 +35,18 @@ export default function SignInForm() {
         });
     }
 
+    const [user, setUser] = useState<User | null | String>("Loading");
+
+    useEffect(() => {
+        console.log(user);
+        const listen = onAuthStateChanged(auth, (user) => {
+            setUser(user);
+        })
+    
+      }, []);
+
     return (
+        <>
         <div className="flex">
             <form onSubmit={createAccount} className="flex flex-col">
                 <label htmlFor="email">Email:</label>
@@ -53,5 +68,23 @@ export default function SignInForm() {
                 </button>
             </form>
         </div>
+        <p>Already have an account? <a href="/home">Sign in</a></p>
+        </>
+    );
+}
+
+export function SignOutButton() {
+    const logOut = () => {
+        signOut(auth).then( () => {
+            console.log("Signed Out!")
+        }).catch( (error) => {
+            console.log("Sing out error " + error);
+        });
+    }
+
+    return (
+        <button onClick={logOut}>
+            Logout
+        </button>
     );
 }
