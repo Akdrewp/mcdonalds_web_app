@@ -1,5 +1,6 @@
-import { SignInForm, SignOutButton }from "../../firebase/auth/signUp";
+import SignInForm from "../../firebase/auth/signUp";
 import PageLoader from "../conditionalRender";
+import SignOutButton from "@/firebase/auth/SignOutButton";
 
 
 export default function More() {
