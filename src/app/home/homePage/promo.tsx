@@ -20,7 +20,7 @@ export default function Promo({
             <div className="grow" style={{position: "relative"}}>
                 <div className='relative left-[5%] top-[12%] h-full w-1/2'>
                     <div className="">
-                        <h1 className={"font-Inter font-[730] pb-1" + (isSmall ? " text-xl leading-5" : " leading-7 text-3xl")}>{title}</h1>
+                        <h1 className={"font-[730] pb-1" + (isSmall ? " text-xl leading-5" : " leading-7 text-3xl")}>{title}</h1>
                     </div>
                     <div>
                         <p className={'text-xs leading-3 pb-2' + (isSmall ? " h-[5ch]" : "") }>{subtext}</p>

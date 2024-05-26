@@ -2,7 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { auth } from "@/firebase/config";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { User } from "firebase/auth";
 import { onAuthStateChanged } from "firebase/auth";
 
@@ -10,8 +10,8 @@ export default function PageLoader({
     fallback,
     children
 } : {
-    fallback: JSX.Element
-    children: JSX.Element
+    fallback: JSX.Element | string
+    children: React.ReactNode
 }) {
 
     const [user, setUser] = useState<User | null | String>("Loading");
@@ -21,8 +21,16 @@ export default function PageLoader({
         const listen = onAuthStateChanged(auth, (user) => {
             setUser(user);
         })
+
+        return () => {
+            listen();
+        }
     
-      }, []);
+      }, [user]);
+
+    function printUser() {
+        console.log(auth.currentUser);
+    }
 
     
     if (user == "Loading") {
@@ -34,9 +42,18 @@ export default function PageLoader({
         )
     }
     if (user == null) {
-        console.log("Redirected!");
+        if (typeof fallback == "string") {
+            console.log("Redirected!");
+            redirect(fallback);
+        }
+        
         return (
-            fallback
+            <>
+                {fallback}
+                {/* <button onClick={printUser}>
+                    printUser
+                </button> */}
+            </>
         )
     }
     else {
@@ -44,6 +61,9 @@ export default function PageLoader({
         return (
             <>
                 {children}
+                {/* <button onClick={printUser}>
+                    printUser
+                </button> */}
             </>
         );
     }

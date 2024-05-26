@@ -1,9 +1,9 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getAuth } from "firebase/auth";
+import { getAuth, connectAuthEmulator } from "firebase/auth";
+import { getFirestore, connectFirestoreEmulator } from "firebase/firestore";
 
-import firebase from "firebase/compat/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -17,11 +17,18 @@ const firebaseConfig = {
     messagingSenderId: "463497788217",
     appId: "1:463497788217:web:ed81a2d21e80680f4606e8",
     measurementId: "G-5Z4MRQH85N"
-  };
+};
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
+export const db = getFirestore(app);
+
+console.log("127.0.0.1 detected!");
+connectAuthEmulator(auth, "http://127.0.0.1:9099");
+connectFirestoreEmulator(db, "127.0.0.1", 8080);
+
+
 
 if (typeof window !== 'undefined') {
   const analytics = getAnalytics(app);

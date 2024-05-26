@@ -13,7 +13,7 @@ export default function RewardsMore() {
                     quality={100}
             />
             <div className="flex flex-col grow pl-2 justify-center">
-                <h1 className="font-Inter font-bold text-[0.8rem] mb-1">More Points, More Rewards</h1>
+                <h1 className="font-bold text-[0.8rem] mb-1">More Points, More Rewards</h1>
                 <p className="leading-4 text-[0.78rem] font-medium">Check out what bonus points are available to get you to more FREE rewards even faster!</p>
             </div>
             <div className="flex items-center pl-1 pr-2">
