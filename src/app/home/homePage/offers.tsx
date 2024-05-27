@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Offers() {
     return (
         <div className="h-52 mt-9 ml-5">
@@ -41,13 +39,7 @@ function OffersImage({
 }) {
     return(
         <div className="flex flex-col max-w-[13ch] max-h-[16ch]">
-            <Image
-                className="rounded-md shadow-[-3px_3px_3px_0px_rgba(0,0,0,0.13)] mb-2"
-                src={src}
-                alt={alt}
-                height={100}
-                width={100}
-            />
+            <img src={src} alt={alt} className="rounded-md shadow-[-3px_3px_3px_0px_rgba(0,0,0,0.13)] mb-2" height={100} width={100}/>
             <p className="max-w-[100px] line-clamp-2 text-[0.62rem] font-extrabold">{underText}</p>
             <p className="max-w-[100px] grow text-xs text-gray-600 leading-3 text-[0.6rem]">{expires}</p>
         </div>

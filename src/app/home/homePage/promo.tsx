@@ -1,7 +1,3 @@
-import Image from 'next/image';
-import { StaticImageData } from "next/image";
-import { relative } from 'path';
-
 export default function Promo({
     img,
     title,
@@ -16,7 +12,7 @@ export default function Promo({
     isSmall: boolean;
 }) {
     return (
-        <div className="promo-wrapper">
+        <div className="promo-wrapper grow z-[1] flex flex-col rounded-lg">
             <div className="grow" style={{position: "relative"}}>
                 <div className='relative left-[5%] top-[12%] h-full w-1/2'>
                     <div className="">
@@ -27,14 +23,7 @@ export default function Promo({
                     </div>
                     <PromoButton/>
                 </div>
-                <Image
-                    src={img}
-                    alt={alt}
-                    style={{
-                        zIndex: -1,
-                    }}
-                    fill
-                />
+                <img src={img} alt={alt} className="z-[-1] h-full w-full absolute inset-0 text-transparent"/>
             </div>
             {<div className={`relative promo-footer text-[0.533rem] leading-[0.6rem] w-[90%]
                  ${(isSmall ? "text-black leading-3 mt-1" : "text-gray-600 left-[5%] mt-[0.35rem]")}`}>

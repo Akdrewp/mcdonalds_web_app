@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Menu() {
     return (
         <div className="h-52 overflow-hidden mt-7 mb-8 ml-4">
@@ -42,12 +40,7 @@ function MenuImage({
     alt: string;
 }) {
     return(
-        <Image
-            className="self-center rounded-md shadow-[-3px_3px_3px_0px_rgba(0,0,0,0.13)]"
-            src={src}
-            alt={alt}
-            height={470/3}
-            width={470/3}
-        />
+        <img src={src} alt={alt} 
+            className={"self-center rounded-md shadow-[-3px_3px_3px_0px_rgba(0,0,0,0.13)] h-[157px] w-[157px]"} />
     );
 }
