@@ -10,5 +10,4 @@ export default async function addPoints(points: number) {
     await updateDoc(userRef, {
         points: increment(points),
     });
-    console.log(userRef);
 }

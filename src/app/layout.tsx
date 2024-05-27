@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavFooter from "./footer";
-import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,13 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/images/favicon.ico" sizes="any"/>
         <link
           rel="icon"
-          href="/icon?<generated>"
+          href="/images/icon?<generated>"
           type="image/<generated>"
           sizes="<generated>"
         />
+        <link rel="manifest" href="/manifest/manifest.webmanifest"/>
       </head>
       <body className={"flex flex-col " + inter.className}>
         {children}

@@ -1,4 +1,5 @@
 import SearchLogo from "../../../public/images/order/magnifying-glass-svgrepo-com";
+import UserPoints from "@/firebase/firestore/userPoints";
 
 export default function TopOrder() {
 
@@ -8,7 +9,7 @@ export default function TopOrder() {
             <h1 className="text-[1.75rem] font-extrabold">Order</h1>
             <div className="flex pt-3">
                 <SearchLogo />
-                <p className="text-[0.8rem] pl-6 font-[900] mr-5 mb-2">1036 pts</p>
+                <UserPoints className="text-[0.8rem] pl-6 font-[900] mr-5 mb-2"/>
             </div>
         </div>
         <label onClick={undefined} className="self-start border border-[#959595] flex rounded-2xl 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import UserPoints from "@/firebase/firestore/userPoints";
 
 export default function Top() {
     return (
@@ -13,7 +13,7 @@ export default function Top() {
                             paddingBottom: "0.4rem"
                         }}
                 />
-                <p className="absolute right-0 text-[0.8rem] font-[900] mr-5 mb-2">1036 pts</p>
+                <UserPoints className="absolute right-0 text-[0.8rem] font-[900] mr-5 mb-2"/>
     </div>
     );
 }

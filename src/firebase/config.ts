@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getAnalytics, isSupported } from "firebase/analytics";
 import { getAuth, connectAuthEmulator } from "firebase/auth";
 import { getFirestore, connectFirestoreEmulator } from "firebase/firestore";
 
@@ -24,12 +24,10 @@ export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 
-console.log("127.0.0.1 detected!");
-connectAuthEmulator(auth, "http://127.0.0.1:9099");
-connectFirestoreEmulator(db, "127.0.0.1", 8080);
+// console.log("127.0.0.1 detected!");
+// connectAuthEmulator(auth, "http://127.0.0.1:9099");
+// connectFirestoreEmulator(db, "127.0.0.1", 8080);
+// // TODO
 
 
-
-if (typeof window !== 'undefined') {
-  const analytics = getAnalytics(app);
-}
+const analytics = isSupported().then(yes => yes ? getAnalytics(app) : null);

@@ -1,5 +1,6 @@
+'use client'
+
 import SignUpForm from "./signUpForm";
-import { createAccount } from "./serverFunctions/createAccountWithEmailAndPassword";
 
 export default function SignInForm() {
     return (

@@ -1,9 +1,7 @@
-import { relative } from "path";
 import "./home.css"
-import Image from "next/image";
 import Top from "./top-home";
-import { Suspense } from "react";
-import Loading from "./loading";
+import PageLoader from "../conditionalRender";
+import SignIn from "@/firebase/auth/signIn";
 
 export default function HomeLayout({
     children,
@@ -11,11 +9,9 @@ export default function HomeLayout({
     children: React.ReactNode
 }) {
     return (
-        <>
+        <PageLoader fallback={<SignIn/>}>
             <Top />
-            <Suspense fallback={<Loading/>}>
-                {children}
-            </Suspense>
-        </>
+            {children}
+        </PageLoader>
     );
 }
