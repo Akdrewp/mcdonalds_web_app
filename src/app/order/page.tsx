@@ -1,6 +1,6 @@
-'use client'
 
 import TopOrder from "./top-order";
+import OrderMenu from "./orderMenu";
 
 function orderHamburger() {
     console.log("Hamburger ordered");
@@ -9,10 +9,8 @@ function orderHamburger() {
 export default function Order() {
 
     return(
-        <div>
-            <button onClick={orderHamburger}>
-                Order Hamburger
-            </button>
+        <div className="grow">
+            <OrderMenu/>
         </div>
     );
 }

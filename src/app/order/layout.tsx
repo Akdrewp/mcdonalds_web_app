@@ -1,4 +1,6 @@
+
 import TopOrder from "./top-order";
+import PageLoader from "../conditionalRender";
 
 export default function OrderLayout({
     children,
@@ -6,9 +8,9 @@ export default function OrderLayout({
     children: React.ReactNode
 }) {
     return (
-        <>
+        <PageLoader fallback={"/more"}>
             <TopOrder />
             {children}
-        </>
+        </PageLoader>
     );
 }
