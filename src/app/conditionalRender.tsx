@@ -36,14 +36,16 @@ export default function PageLoader({
     if (user == "Loading") {
         console.log("Loading");
         return (
-            <div>
-                LOADING
+            <div className="grow self-center flex items-center">
+                <h1>LOADING</h1>
             </div>
         )
     }
     if (user == null) {
+        console.log("Not logged in");
+
         if (typeof fallback == "string") {
-            console.log("Redirected!");
+            console.log("Redirecting");
             redirect(fallback);
         }
         
@@ -57,7 +59,7 @@ export default function PageLoader({
         )
     }
     else {
-        console.log("Logged in!");
+        console.log("Logged in");
         return (
             <>
                 {children}

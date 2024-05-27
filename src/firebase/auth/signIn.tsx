@@ -1,7 +1,7 @@
 'use client'
 
 import {  signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../config";
+import { auth } from "@/firebase/config";
 
 export default function SignIn() {
 
@@ -24,7 +24,8 @@ export default function SignIn() {
     }
 
     return (
-        <div className="flex">
+        <div className="grow self-center 
+            items-center flex">
             <form onSubmit={signIn} className="flex flex-col">
                 <label htmlFor="email">Email:</label>
                 <input 

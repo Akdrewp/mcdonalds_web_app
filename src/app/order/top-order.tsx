@@ -11,8 +11,9 @@ export default function TopOrder() {
                 <p className="text-[0.8rem] pl-6 font-[900] mr-5 mb-2">1036 pts</p>
             </div>
         </div>
-        <label className="self-start border border-[#959595] flex rounded-2xl 
-            overflow-hidden text-[0.67rem] mt-5"
+        <label onClick={undefined} className="self-start border border-[#959595] flex rounded-2xl 
+            overflow-hidden text-[0.67rem] mt-5
+            cursor-pointer"
         >
             <input type="checkbox" value="" className="sr-only peer" />
             <h1 className="py-[0.2rem] pl-4 overflow-hidden
