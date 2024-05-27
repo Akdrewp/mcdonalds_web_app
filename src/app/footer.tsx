@@ -14,6 +14,7 @@ export default function NavFooter() {
 
     return (
         <div className={[
+            "footerUntransform",
             "grid grid-cols-5 justify-items-center items-end",
             "sticky bottom-0",
             "width-full h-[5.5rem] z-[2]",

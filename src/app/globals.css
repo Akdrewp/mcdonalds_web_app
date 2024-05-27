@@ -16,3 +16,15 @@ body, html {
         min-height: 100vh;
         background-color: var(--main-bg);
 }
+
+@media (pointer:none), (pointer:coarse) {
+        .iPhoneTransform {
+                transform: translateY(-33px);
+        }
+        .footerUntransform {
+                transform: translateY(33px);
+        }
+        .iPhone {
+                margin-bottom: 2rem;
+        }
+}

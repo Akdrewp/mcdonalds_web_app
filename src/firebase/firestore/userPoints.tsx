@@ -17,24 +17,24 @@ export default function UserPoints({
     const [points, setPoints] = useState(0);
 
     useEffect(() => {
-        // const asyncSetPoints = async () => {
-        //     await getDoc(userRef).then( (userDoc) => {
-        //         if (userDoc.exists()) {
-        //             setPoints(userDoc.data()?.points);
-        //         }
-        //         else {
-        //             console.log("Error doc undefined");
-        //         }
-        //     }).catch( (err) => {
-        //         console.log("Error with permissions");
-        //         console.log(err);
-        //     });
-        // }
+        const asyncSetPoints = async () => {
+            await getDoc(userRef).then( (userDoc) => {
+                if (userDoc.exists()) {
+                    setPoints(userDoc.data()?.points);
+                }
+                else {
+                    console.log("Error doc undefined");
+                }
+            }).catch( (err) => {
+                console.log("Error with permissions");
+                console.log(err);
+            });
+        }
 
-        // asyncSetPoints();
-        // const updatePoints = onSnapshot(userRef, (doc) => {
-        //     setPoints(doc.data()?.points);
-        // });
+        asyncSetPoints();
+        const updatePoints = onSnapshot(userRef, (doc) => {
+            setPoints(doc.data()?.points);
+        });
       }, [userRef])
 
     return (

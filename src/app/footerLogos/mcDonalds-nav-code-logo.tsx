@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function McDonaldsCodeLogo({
     className,
     isSelected,
@@ -9,6 +7,6 @@ export default function McDonaldsCodeLogo({
 }) {
     return (
         <img src={isSelected ? "/images/nav/CodeSelectedPNG.png" : "/images/nav/CodeUnselectedPNG.png"} alt={"Reqards and Offers"}
-            className="h-[20px] w-[20px] pb-[0.43rem]" />
+            className="h-[27px] w-[19px] pb-[0.43rem]" />
     )
 }

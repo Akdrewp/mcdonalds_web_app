@@ -17,7 +17,7 @@ export default function HomePage() {
                         isSmall={false}
                     />
             </div>
-            <div className="flex flex-col mb-12 pt-9 bg-[#f9f9f9]">
+            <div className="iPhone flex flex-col mb-12 pt-9 bg-[#f9f9f9]">
                 <RewardsMore />
                 <Menu />
                 <Offers />

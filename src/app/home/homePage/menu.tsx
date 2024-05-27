@@ -1,6 +1,6 @@
 export default function Menu() {
     return (
-        <div className="h-52 overflow-hidden mt-7 mb-8 ml-4">
+        <div className="h-52 overflow-hidden mt-9 mb-8 ml-4">
             <div className="flex mb-3">
                 <h1 className="grow ml-2 text-xl font-extrabold speedee">Menu</h1>
                 <div className="flex items-center text-[#3377c2] mr-4">
