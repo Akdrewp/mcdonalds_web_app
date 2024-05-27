@@ -8,14 +8,7 @@ export default function McDonaldsCodeLogo({
     isSelected: boolean,
 }) {
     return (
-        <Image
-            src={isSelected ? "/images/nav/CodeSelectedPNG.png" : "/images/nav/CodeUnselectedPNG.png"}
-            alt={"Reqards and Offers"}
-            height={20}
-            width={20}
-            style={{
-                paddingBottom: "0.43rem"
-            }}
-        />
+        <img src={isSelected ? "/images/nav/CodeSelectedPNG.png" : "/images/nav/CodeUnselectedPNG.png"} alt={"Reqards and Offers"}
+            className="h-[20px] w-[20px] pb-[0.43rem]" />
     )
 }
